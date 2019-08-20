@@ -36,7 +36,8 @@ h2 {
 main {
     display: flex;
     flex-direction: column; 
-    align-content: center;   
+    align-items: center;
+    justify-content: center;   
 }
 
 section {
@@ -53,6 +54,9 @@ section {
 
 .questionScreen {
     display: flex;
+    max-width: 850px;
+    /* justify-content: center;   */
+    align-items: center;
 }
 
 .resultScreen {
@@ -61,23 +65,22 @@ section {
 
 .answerOption {
     margin: 10px 0;
-    flex-basis: 100%;    
+    /* flex-basis: 75%;     */
+    /* width: 300px; */
     text-align: left;    
     border: 1px solid grey;
-    padding: 5px;
+    padding: 5px 60px;
 }
 
 .radio-input {
-    margin-right: 5px;
+    margin-right: 15px;
 } 
-
-.question-form {    
-
-}
 
 fieldset {
     border: none;
-    display: flex;         
+    display: flex;
+    /* justify-content: center;  
+    align-items: center;        */
 }
 
 .submitButton, .startButton {
