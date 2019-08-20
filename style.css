@@ -24,12 +24,13 @@ header {
 }
 
 .progress ul {
+    list-style: none;
     display: flex;
     flex-direction: column; 
     justify-content: space-around;  
 }
 
-h2 {
+h2, p {
     margin: 10px 0;
 }
 
@@ -83,7 +84,7 @@ fieldset {
     align-items: center;        */
 }
 
-.submitButton, .startButton {
+.submitButton, .startButton, .nextButton {
     /* align-self: center; */
     margin: 0 auto;
     padding: 5px;
