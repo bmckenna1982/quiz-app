@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NHL Quiz App</title>
+    <meta name="description" content="Quiz to see if you can identify these NHL star players">
+    <link rel="stylesheet" href="style.css">
+    <script>src="index.js"</script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>    
+    <header>
+        <div class="icon"><a href="index.html"></a></div>
+        <div class="progress">
+            <ul>
+                <il>Qeustions</il>
+                <il>Score</il>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="js-loadingScreen">
+            <h2>Think you know NHL Stars?</h2>
+            <button class="js-startButton"></button>
+        </section>
+        <section class="js-questionScreen">
+            <h2>Question 1</h2>
+            <div class="answer1"></div>
+            <div class="answer2"></div>
+            <div class="answer3"></div>
+            <div class="answer4"></div>
+        </section>
+        <section class="js-resultScreen"> 
+            <div class="resultContainer">
+                <h2>Your Result</h2>
+                <p><span class="playerName">Correct Player</span>Player description</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
