@@ -20,8 +20,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;       
-    margin-bottom: 20px;
+    width: 100%;           
 }
 
 .icon {    
@@ -31,8 +30,8 @@ header {
 }
 
 .logo {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
 }
 .progress {
     flex: 2;        
@@ -83,7 +82,7 @@ section {
 }
 
 section h2 {
-    background-color: rgba(224, 218, 218, 0.3);
+    background-color: rgba(178, 204, 229, 0.7);
     border-radius: 5px;    
    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);      
@@ -109,30 +108,33 @@ section h2 {
 }
 
 .answerOption {
-    margin: 10px 0;
-    /* flex-basis: 75%;     */
-    /* width: 300px; */
+    margin: 10px 0;    
     text-align: left;    
     border: 1px solid grey;
     padding: 5px 60px;
+    background-color: rgba(178, 204, 229, 0.7);
+    border-radius: 5px;    
+   -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);      
 }
 
 .radio-input {
+    flex: 0 0 auto;
     margin-right: 15px;
 } 
 
 fieldset {
     border: none;
-    display: flex;
-    /* justify-content: center;  
-    align-items: center;        */
+    display: flex;    
 }
 
-.submitButton, .startButton, .nextButton {
-    /* align-self: center; */
-    margin: 0 auto;
+.submitButton, .startButton, .nextButton {    
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 5px;
 }
+
 
 .answer1, .answer2, .answer3, .answer4 {
     display: flex;

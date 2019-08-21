@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <title>NHL Quiz App</title>
+                <meta name="description" content="Quiz to see if you can identify these NHL star players">
+                <link rel="stylesheet" href="style.css">                
+            </head>
+<body>
+    <header>
+        <div class="icon">
+            <a href="index.html" aria-label="NHL logo image to return home">
+                <img class="logo" src="./images/NHL-logo.png" alt="NHL logo"/>
+            </a>
+        </div>
+        <div class="progress">
+            <ul>
+                <li>Questions: <span>0</span> / 8</li>
+                <li>Score: <span>0</span></li>
+            </ul>
+        </div>
+    </header>
+    <main>        
+        <section class="js-completeScreen completeScreen"> 
+            <div class="completeContainer">
+                <h2>Congratulations!</h2>
+                <p>You scored <span class="scoreNumber">7 </span>out of 8 and proved you're a real hockey fan.</p>
+                <p>Think you can do better?</p>
+                <button type="button" class="restakeButton js-restakeButton">Retake Quiz</button>
+            </div>
+        </section>        
+    </main>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cuid/1.3.8/browser-cuid.min.js"></script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="index.js"></script>    
+</body>
+</html>
