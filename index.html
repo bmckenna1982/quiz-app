@@ -10,7 +10,11 @@
             </head>
 <body>
     <header>
-        <div class="icon"><a href="index.html" aria-label="NHL logo image to return home"></a></div>
+        <div class="icon">
+            <a href="index.html" aria-label="NHL logo image to return home">
+                <img class="logo" src="./images/NHL-logo.png" alt="NHL logo"/>
+            </a>
+        </div>
         <div class="progress">
             <ul>
                 <li>Questions: <span>0</span> out of 8</li>
@@ -20,14 +24,16 @@
     </header>
     <main>
             <section class="js-welcomeScreen welcomeScreen">
-            <h2>Think you know NHL Stars?</h2>
+            <h1>Think you know NHL Stars?</h1>
+            <h2>Prove your self by trying to identify these 8 NHL stars by their accomplishments.</h2>
             <button class="js-startButton startButton">Start Quiz</button>
         </section>
         <section class="js-questionScreen questionScreen">
-            <div class="question0"></div>
+            <div class="question0 box">
                 <h2>Which NHL star was the 1st pick in the 2007 NHL draft, is a 3 time Stanley Cup winner, and received the 
                     Conn Smythe award in the 2012-13 playoffs?
                 </h2>
+            </div>
                 <form action='#' method="POST" class="question-form js-question-form">
                     <fieldset>
                         <label class="answerOption">
