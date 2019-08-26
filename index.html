@@ -6,70 +6,27 @@
                 <meta http-equiv="X-UA-Compatible" content="ie=edge">
                 <title>NHL Quiz App</title>
                 <meta name="description" content="Quiz to see if you can identify these NHL star players">
-                <link rel="stylesheet" href="style.css">                
+                <link rel="stylesheet" href="style.css">
+                <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">                
             </head>
 <body>
     <header>
-        <div class="icon">
-            <a href="index.html" aria-label="NHL logo image to return home">
-                <img class="logo" src="./images/NHL-logo.png" alt="NHL logo"/>
-            </a>
-        </div>
-        <div class="progress">
-            <ul>
-                <li>Questions: <span>0</span> out of 8</li>
-                <li>Score: <span>0</span></li>
-            </ul>
-        </div>
+        <div class="backgroundContainer">
+            <div class="icon">
+                <a href="index.html" aria-label="NHL logo image to return home">
+                    <img class="logo" src="./images/NHL-logo.png" alt="NHL logo"/>
+                </a>
+            </div>
+            <div class="titleText">
+                <h1>Think you know today's NHL star players?</h1>
+            </div>
+            <div class="progress"></div>
+        </div>        
     </header>
-    <main>
-            <section class="js-welcomeScreen welcomeScreen">
-            <h1>Think you know NHL Stars?</h1>
-            <h2>Prove your self by trying to identify these 8 NHL stars by their accomplishments.</h2>
-            <button class="js-startButton startButton">Start Quiz</button>
-        </section>
-        <section class="js-questionScreen questionScreen">
-            <div class="question0 box">
-                <h2>Which NHL star was the 1st pick in the 2007 NHL draft, is a 3 time Stanley Cup winner, and received the 
-                    Conn Smythe award in the 2012-13 playoffs?
-                </h2>
-            </div>
-                <form action='#' method="POST" class="question-form js-question-form">
-                    <fieldset>
-                        <label class="answerOption">
-                            <input class="radio-input" type="radio" value="Answer 1" name="answer" required><span>Jonathan Toews</span>
-                        </label>
-                        <label class="answerOption">
-                            <input class="radio-input" type="radio" value="Answer 2" name="answer" required><span>Sidney Crosby</span>
-                        </label>
-                        <label class="answerOption">
-                            <input class="radio-input" type="radio" value="Answer 3" name="answer" required><span>Patrick Kane</span>
-                        </label>
-                        <label class="answerOption">
-                            <input class="radio-input" type="radio" value="Answer 4" name="answer" required><span>Alex Ovechkin</span>
-                        </label>
-                        <button type="submit" class="submitButton">Face off!</button>
-                    </fieldset>
-                </form>
-            </div>                
-        </section>
-        <section class="js-resultScreen resultScreen"> 
-            <div class="resultContainer">
-                <h2>Incorrect</h2>
-                <p><span class="playerName">Patrick Kane </span>has won 3 Stanley Cups with the Chicago Blackhawks since being
-                drafted number 1 overall in 2007 including winning the Conn Smythe in 2013 after leading the team in scoring with
-                19 points in the playoffs.</p>
-                <button type="button" class="nextButton js-nextButton">Next</button>
-            </div>
-        </section>
-        <section class="js-completeScreen completeScreen"> 
-                <div class="completeContainer">
-                    <h2>Congratulations!</h2>
-                    <p>You scored <span class="scoreNumber">7 </span>out of 8 and proved you're a real hockey fan.</p>
-                    <p>Think you can do better?</p>
-                    <button type="button" class="restakeButton js-restakeButton">Retake Quiz</button>
-                </div>
-            </section>        
-    </main>
+    <main class="quizz">
+                
+    </main>    
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="index.js"></script>    
 </body>
 </html>
