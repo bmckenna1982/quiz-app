@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <title>NHL Quiz App</title>
+                <meta name="description" content="Quiz to see if you can identify these NHL star players">
+                <link rel="stylesheet" href="style.css">                
+            </head>
+<body>
+    <header>
+        <div class="icon">
+            <a href="index.html" aria-label="NHL logo image to return home">
+                <img class="logo" src="./images/NHL-logo.png" alt="NHL logo"/>
+            </a>
+        </div>
+        <div class="progress">
+            <ul>
+                <li>Questions: <span>0</span> / 8</li>
+                <li>Score: <span>0</span></li>
+            </ul>
+        </div>
+    </header>
+    <main>        
+        <section class="js-questionScreen questionScreen">
+            <div class="question0 box">
+                <h2>Which NHL star was the 1st pick in the 2007 NHL draft, is a 3 time Stanley Cup winner, and received the 
+                    Conn Smythe award in the 2012-13 playoffs?
+                </h2>
+            </div>
+                <form action='#' method="POST" class="question-form js-question-form">
+                    <fieldset>
+                        <label class="answerOption">
+                            <input class="radio-input" type="radio" value="Answer 1" name="answer" required><span>Jonathan Toews</span>
+                        </label>
+                        <label class="answerOption">
+                            <input class="radio-input" type="radio" value="Answer 2" name="answer" required><span>Sidney Crosby</span>
+                        </label>
+                        <label class="answerOption">
+                            <input class="radio-input" type="radio" value="Answer 3" name="answer" required><span>Patrick Kane</span>
+                        </label>
+                        <label class="answerOption">
+                            <input class="radio-input" type="radio" value="Answer 4" name="answer" required><span>Alex Ovechkin</span>
+                        </label>
+                        <button type="submit" class="submitButton">Face off!</button>
+                    </fieldset>
+                </form>
+            </div>                
+        </section>             
+    </main>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cuid/1.3.8/browser-cuid.min.js"></script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="index.js"></script>    
+</body>
+</html>
