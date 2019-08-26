@@ -17,16 +17,16 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* header styling */
+
 header {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;           
+    padding: 20px;             
 }
 
 .icon {    
-    flex: 1;    
+    flex: 1;
+    display: flex;
+    justify-content: center;    
     /* background: url(./images/NHL-logo.png) no-repeat;
     background-size: contain; */    
 }
@@ -39,24 +39,17 @@ header {
     height: 80px;
     width: 80px;
 }
-.progress {
-    flex: 2;        
-    text-align: center;         
-}
 
-.progress ul {
-    list-style: none;
+/* Quiz screen styling */
+.quizz {
     display: flex;
-    flex-direction: column; 
-    justify-content: space-around; 
-    font-size: 18px; 
-    font-weight: 600;
-    color: white;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;    
+    /* justify-content: center; */
+    /* height: 100%;
+    min-height: 100%;    */
 }
-
-/* .progress li {
-    color: white;
-} */
 
 h2 {
     font-size: 20px;     
@@ -73,14 +66,19 @@ h2 , p {
     padding: 10px;
 }
 
-main {
+.progress {
+    flex: 2;        
+    text-align: center;         
+}
+
+.progress ul {
+    list-style: none;
     display: flex;
-    flex-direction: column;
-    flex: 1;
-    align-items: center;
-    /* justify-content: center; */
-    /* height: 100%;
-    min-height: 100%;    */
+    flex-direction: column; 
+    justify-content: space-around; 
+    font-size: 18px; 
+    font-weight: 600;
+    color: white;
 }
 
 section {
@@ -89,8 +87,7 @@ section {
     text-align: center;
     justify-content: space-around; 
     align-items: center;   
-    padding: 0 20px 0;
-    max-width: 850px;        
+    padding: 0 20px 0;           
 }
 
 .welcomeScreen h2, .questionScreen h2, .resultContainer, .completeContainer {
@@ -105,6 +102,7 @@ section {
 .welcomeScreen {
     display: flex;
     color: white;
+    margin-top: 40px;
 }
 
 .questionScreen {
@@ -125,10 +123,12 @@ section {
     margin: 10px 0;    
     text-align: left;    
     border: 1px solid grey;
-    padding: 5px 0px 5px 60px;
+    padding: 5px 0px 5px 0px;
     color: white;
+    display: flex;
+    justify-content: center;
     /* background-color: rgba(184, 213, 217); */
-    background-color: rgba(36, 70, 115, 0.8);
+    background-color: rgba(36, 70, 115);
     /* color: #b8d5d9; */
     border-radius: 5px;    
    /* -webkit-backdrop-filter: blur(3px);
@@ -142,7 +142,7 @@ input {
     border-radius: 50%;
     width: 16px;
     height: 16px;
-    border: 2px solid #b8d5d9;
+    border: 2px solid white;
     transition: 0.2s all linear;
     outline: none;
     margin-right: 5px;
@@ -150,15 +150,22 @@ input {
     top: 2px;    
 }
 
-input:checked {
-    border: 8px solid #b8d5d9;
+input:checked, input:focus {
+    border: 8px solid white;
 }
 
+label:hover, label:focus {
+    background-color: #4694A6; 
+    color: black;
+}
 .radio-input {
     flex: 0 0 auto;
     margin-right: 15px;
 } 
 
+button:hover {
+    background-color: #4694A6;
+}
 
 
 fieldset {
@@ -179,24 +186,79 @@ button {
     padding: 15px;
     /* color: #244673; */
     font-size: 18px;
+    width: 100%;
 }
 
-.answer1, .answer2, .answer3, .answer4 {
+/* .answer1, .answer2, .answer3, .answer4 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 50%;
     border: 1px solid grey;
-}
+} */
 
-.backgroundContainer {
-    /* background-color: rgba(184, 213, 217); */
-    background-color: rgba(36, 70, 115, 0.8);
+ .backgroundContainer {    
+    background-color: rgba(36, 70, 115);
     border-radius: 5px;
     padding: 5px;
-}
+    width: 100%;
+} 
 
 .question-form {
     width: 100%;
     margin-bottom: 60px;       
+}
+
+@media screen and min-width: 1190px) {
+
+}
+
+@media screen and (min-width: 768px) {
+    body, h2, .progress ul, button {        
+        font-size: 24px;
+    }
+    .logo {        
+        height: 120px;
+        width: 120px;
+    }
+
+    h1 {
+        font-size: 36px;    }
+    
+    .backgroundContainer, h2 {
+            padding: 20px;
+    }
+
+    .quizz {
+        margin-top: 60px;
+    }
+
+    .answerOption {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    section {
+        max-width: 850px;
+    }    
+
+    .icon {        
+        justify-content: flex-start;
+    }
+    .titleText {
+        align-self: center;       
+        flex: 2;
+    }
+    .backgroundContainer {                
+        display: flex;        
+        flex-direction: row;
+
+    }
+    .progress {
+        text-align: right;
+        flex: 1;
+        align-self: center;
+    }
+    p {
+        padding: 20px;
+    }
 }
